@@ -1,0 +1,78 @@
+/* Define the color palette */
+:root {
+    --hunter-green: #3f6634ff;
+    --champagne-pink: #fce4d8ff;
+    --mint: #03cea4ff;
+    --delft-blue: #3a405aff;
+    --cool-gray: #848fa5ff;
+    --text-color: var(--delft-blue);
+    --background-color: var(--champagne-pink);
+    --accent-color: var(--mint);
+}
+
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for central layout */
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2.5rem;
+    color: var(--hunter-green);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Links and buttons */
+a, button {
+    text-decoration: none;
+    background-color: var(--accent-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+a:hover, button:hover {
+    background-color: var(--hunter-green);
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+}

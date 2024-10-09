@@ -1,0 +1,3 @@
+Flask==2.x.x
+Flask-SQLAlchemy==2.x.x
+Flask-Migrate==2.x.x
